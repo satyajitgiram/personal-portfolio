@@ -19707,7 +19707,9 @@ body.white-version .rn-btn-ulderline {
 /*# sourceMappingURL=../maps/style.css.map */
 
 
-
+input[type=checkbox]:checked ~ label::after, input[type=radio]:checked ~ label::after {
+  opacity: 0;
+}
 
 .checkbox {
   opacity: 0;
@@ -19726,6 +19728,20 @@ body.white-version .rn-btn-ulderline {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.theme-dark-light input[type=checkbox] ~ label::before, input[type=radio] ~ label::before {
+  content: " ";
+  position: absolute;
+  display: none;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 2px;
+  transition: all 0.3s;
 }
 
 .fa-moon {color: #f1c40f;}

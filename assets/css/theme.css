@@ -1,0 +1,86 @@
+.lightmode_darkmode label {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.lightmode_darkmode label:after {
+    content: "" !important;
+    width: 180px !important;
+    height: 180px !important;
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    background: linear-gradient(180deg, #ffcc89, #d8860b) !important;
+    border-radius: 180px !important;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) !important;
+    transition: 0.3s !important;
+}
+.lightmode_darkmode label:before {
+    content: "" !important;
+    width: 180px !important;
+    height: 180px !important;
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    background: linear-gradient(180deg, #ffcc89, #d8860b) !important;
+    border-radius: 180px !important;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) !important;
+    transition: 0.3s !important;
+}
+.lightmode_darkmode label svg {
+    position: absolute;
+    width: 120px;
+    top: 40px;
+    z-index: 100;
+}
+.lightmode_darkmode label svg.sun {
+    left: 40px;
+    fill: #fff;
+    transition: 0.3s;
+}
+label svg.moon {
+    left: 340px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+}
+.lightmode_darkmode input {
+    width: 0 ;
+    height: 0;
+    visibility: hidden !important;
+}
+.lightmode_darkmode input:checked + label {
+    background: #242424;
+}
+.lightmode_darkmode input:checked + label:after {
+    left: 490px !important;
+    transform: translateX(-100%) !important;
+    background: linear-gradient(180deg, #777, #3a3a3a) !important;
+}
+.lightmode_darkmode input:checked + label svg.sun {
+    fill: #7e7e7e;
+}
+.lightmode_darkmode input:checked + label svg.moon {
+    fill: #fff;
+}
+.lightmode_darkmode input:checked + label + .background {
+    background: #242424;
+}
+.lightmode_darkmode input:active:after {
+    width: 260px;
+}
+
+
+.lightmode_darkmode input[type=checkbox] ~ label::before{
+    border:none !important;
+}
+
+.lightmode_darkmode input[type=checkbox] ~ label::after{
+    border:none !important;
+
+}
