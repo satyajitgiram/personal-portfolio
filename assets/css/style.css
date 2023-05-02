@@ -19903,7 +19903,7 @@ input[type=checkbox]:checked ~ label::after, input[type=radio]:checked ~ label::
  }
 }
 .skills-in-tab .rn-skill-area .inner .skill-share-inner .skill-share li img {
-  max-height: 30px;
+  max-height: 39px;
 }
 @media only screen and (max-width: 479px) {
   .skills-in-tab .rn-skill-area .inner .skill-share-inner .skill-share li img {
@@ -19924,7 +19924,7 @@ input[type=checkbox]:checked ~ label::after, input[type=radio]:checked ~ label::
   line-height: 60px;
 }
 .rn-skill-area .inner .skill-share-inner.skill-share-inner-width li img {
-  max-width: 23px;
+  max-width: 32px;
 }
 .single-card-sticky .card-list {
   margin: 0;
