@@ -1,11 +1,21 @@
 (function ($) {
     'use strict';
+    // light mode dark mode js
     const checkbox = document.getElementById("checkbox")
+    const checkbox2 = document.getElementById("checkbox2")
     const element = document.querySelector('#index-body');
     
 
     checkbox.addEventListener("change", () => {
         if (checkbox.checked) {
+            element.classList.add('white-version');
+          } else {
+            element.classList.remove('white-version');
+          }
+    })
+
+    checkbox2.addEventListener("change", () => {
+        if (checkbox2.checked) {
             element.classList.add('white-version');
           } else {
             element.classList.remove('white-version');

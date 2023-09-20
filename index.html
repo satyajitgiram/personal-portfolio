@@ -25,19 +25,21 @@
 </head>
 
 <!-- <body class="template-color-1 spybody  white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="70"> -->
-<body class="template-color-1 spybody no-scroll-y" id="index-body" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
-   
-     <!-- Start: Preloader -->
-     <section id="preloader-section">
+
+<body class="template-color-1 spybody no-scroll-y" id="index-body" data-spy="scroll" data-target=".navbar-example2"
+    data-offset="70">
+
+    <!-- Start: Preloader -->
+    <section id="preloader-section">
         <div id="preloader">
             <div id="ctn-preloader" class="ctn-preloader">
                 <div class="animation-preloader">
-                    
+
                     <!-- Spinner -->
-                    <div class="loader">
+                    <!-- <div class="loader">
                         <span>{</span><span>}</span>
-                    </div>
-                    
+                    </div> -->
+
                     <!-- Start: Text Loading -->
                     <div class="txt-loading">
                         <span data-text-preloader="S" class="letters-loading">S</span>
@@ -97,18 +99,41 @@
                             <li class="nav-item"><a class="nav-link" href="#testimonial">Clients</a></li>
                             <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                             <!-- <li class="nav-item"><a class="nav-link" href="#blog">blog</a></li> -->
-                            <li class="nav-item"><div><input type="checkbox" class="checkbox" id="checkbox">
-                                <label for="checkbox" class="checkbox-label theme-dark-light">
-                                  <i class="fas fa-moon"></i>
-                                  <i class="fas fa-sun"></i>
-                                  <span class="ball"></span>
-                                </label>
-                              </div></li>
+                            <li class="nav-item">
+                                <!-- <div>
+                                    <input type="checkbox" class="checkbox" id="checkbox">
+                                    <label for="checkbox" class="checkbox-label theme-dark-light">
+                                        <i class="fas fa-moon"></i>
+                                        <i class="fas fa-sun"></i>
+                                        <span class="ball"></span>
+                                    </label>
+                                </div> -->
+                                <label class="theme-switch">
+                                    <input type="checkbox" class="theme-switch__checkbox" id="checkbox">
+                                    <div class="theme-switch__container">
+                                      <div class="theme-switch__clouds"></div>
+                                      <div class="theme-switch__stars-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+                                        </svg>
+                                      </div>
+                                      <div class="theme-switch__circle-container">
+                                        <div class="theme-switch__sun-moon-container">
+                                          <div class="theme-switch__moon">
+                                            <div class="theme-switch__spot"></div>
+                                            <div class="theme-switch__spot"></div>
+                                            <div class="theme-switch__spot"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </label>
+                            </li>
 
-                              <li class="nav-item">
-                              </li>
+                            <li class="nav-item">
+                            </li>
 
-                             <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
                         </ul>
                         <!-- End Mainmanu Nav -->
                     </nav>
@@ -120,8 +145,8 @@
                         </div>
                         <div class="close-menu d-block">
                             <span class="closeTrigger">
-                            <i data-feather="x"></i>
-                        </span>
+                                <i data-feather="x"></i>
+                            </span>
                         </div>
                     </div>
                     <!-- End Header Right  -->
@@ -156,31 +181,62 @@
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#pricing">Pricing</a></li>
                     <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">blog</a></li> -->
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
-                    <li class="nav-item"><div><input type="checkbox" class="checkbox theme-dark-light" id="checkbox">
-                        <label for="checkbox" class="checkbox-label">
-                          <i class="fas fa-moon"></i>
-                          <i class="fas fa-sun"></i>
-                          <span class="ball"></span>
-                        </label>
-                      </div></li>
+                    <li class="nav-item">
+                        <!-- <div><input type="checkbox" class="checkbox theme-dark-light" id="checkbox">
+                            <label for="checkbox" class="checkbox-label">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <span class="ball"></span>
+                            </label>
+                        </div> -->
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-switch__checkbox" id="checkbox2">
+                            <div class="theme-switch__container">
+                              <div class="theme-switch__clouds"></div>
+                              <div class="theme-switch__stars-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+                                </svg>
+                              </div>
+                              <div class="theme-switch__circle-container">
+                                <div class="theme-switch__sun-moon-container">
+                                  <div class="theme-switch__moon">
+                                    <div class="theme-switch__spot"></div>
+                                    <div class="theme-switch__spot"></div>
+                                    <div class="theme-switch__spot"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                    </li>
                 </ul>
                 <!-- social sharea area -->
                 <div class="social-share-style-1 mt--40">
                     <span class="title">find with me</span>
                     <ul class="social-share d-flex liststyle">
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/satyajitgiram/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/satyajitgiram/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
                                     <rect x="2" y="9" width="4" height="12"></rect>
                                     <circle cx="4" cy="4" r="2"></circle>
                                 </svg></a>
                         </li>
-                        <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg></a>
+                        <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg></a>
                         </li>
-                        <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                        <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                                 </svg></a>
                         </li>
@@ -211,25 +267,30 @@
                                             <!-- type headline start-->
                                             <span class="cd-headline clip is-full-width">
                                                 <span>a </span>
-                                        <!-- ROTATING TEXT -->
-                                        <span class="cd-words-wrapper">
+                                                <!-- ROTATING TEXT -->
+                                                <span class="cd-words-wrapper">
                                                     <b class="is-visible">Full Stack Web-Developer.</b>
                                                     <b class="is-hidden">Professional Coder.</b>
                                                     <b class="is-hidden">Freelancer</b>
                                                     <b class="is-hidden">Coding Tutor</b>
                                                     <b class="is-hidden">Developer.</b>
                                                 </span>
-                                        </span>
-                                        <!-- type headline end -->
+                                            </span>
+                                            <!-- type headline end -->
                                         </span>
                                     </h1>
 
                                     <div>
-                                        <p class="description">A full stack web developer with 2 years of industry experience,
-                                             I have a passion for building high-quality web applications. I have expertise in 
-                                             backend and frontend development, including database design, API development, and 
-                                             responsive web design. I am a detail-oriented developer committed to writing clean, 
-                                             maintainable code. I take pride in delivering high-quality products that exceed expectations.</p>
+                                        <p class="description">A full stack web developer with 2 years of industry
+                                            experience,
+                                            I have a passion for building high-quality web applications. I have
+                                            expertise in
+                                            backend and frontend development, including database design, API
+                                            development, and
+                                            responsive web design. I am a detail-oriented developer committed to writing
+                                            clean,
+                                            maintainable code. I take pride in delivering high-quality products that
+                                            exceed expectations.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -237,7 +298,9 @@
                                         <div class="social-share-inner-left">
                                             <span class="title">find with me</span>
                                             <ul class="social-share d-flex liststyle">
-                                                <li class="linkedin"><a href="https://www.linkedin.com/in/satyajitgiram/" target="_blank"><i data-feather="linkedin"></i></a>
+                                                <li class="linkedin"><a
+                                                        href="https://www.linkedin.com/in/satyajitgiram/"
+                                                        target="_blank"><i data-feather="linkedin"></i></a>
                                                 </li>
                                                 <li class="instagram"><a href="#"><i data-feather="instagram"></i></a>
                                                 </li>
@@ -250,9 +313,12 @@
                                         <div class="skill-share-inner">
                                             <span class="title">best skill on</span>
                                             <ul class="skill-share d-flex liststyle">
-                                                <li><img rel="preload" fetchpriority="high" src="assets/images/icons/python.png" alt="Icons Images"></li>
-                                                <li><img rel="preload" fetchpriority="high" src="assets/images/icons/django.svg" alt="Icons Images"></li>
-                                                <li><img rel="preload" fetchpriority="high" src="assets/images/icons/icons-16.png" alt="Icons Images"></li>
+                                                <li><img rel="preload" fetchpriority="high"
+                                                        src="assets/images/icons/python.png" alt="Icons Images"></li>
+                                                <li><img rel="preload" fetchpriority="high"
+                                                        src="assets/images/icons/django.svg" alt="Icons Images"></li>
+                                                <li><img rel="preload" fetchpriority="high"
+                                                        src="assets/images/icons/icons-16.png" alt="Icons Images"></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -263,10 +329,11 @@
                         <div class="order-1 order-lg-2 col-lg-5">
                             <div class="thumbnail">
                                 <div class="inner">
-                                    <img rel="preload" fetchpriority="high" src="assets/images/slider/my hero image 1.webp" alt="Personal Portfolio Images">
+                                    <img rel="preload" fetchpriority="high"
+                                        src="assets/images/slider/my hero image 1.webp" alt="Personal Portfolio Images">
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -278,7 +345,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
+                        <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500"
+                            data-aos-delay="100" data-aos-once="true">
                             <span class="subtitle">Features</span>
                             <h2 class="title">What I Do</h2>
                         </div>
@@ -287,7 +355,8 @@
                 <div class="row row--25 mt_md--10 mt_sm--10">
 
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -295,8 +364,10 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title"><a href="javascript:void(0)">Website Development</a></h4>
-                                    <p class="description">Crafting stunning websites with the latest technologies to elevate your online presence.</p>
-                                    <a class="read-more-button" href="javascript:void(0)"><i class="feather-arrow-right"></i></a>
+                                    <p class="description">Crafting stunning websites with the latest technologies to
+                                        elevate your online presence.</p>
+                                    <a class="read-more-button" href="javascript:void(0)"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="javascript:void(0)"></a>
@@ -304,7 +375,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -312,8 +384,10 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title"><a href="javascript:void(0)">Teach Coding</a></h4>
-                                    <p class="description">Empowering learners to achieve their goals with engaging and personalized teaching.</p>
-                                    <a class="read-more-button" href="javascript:void(0)"><i class="feather-arrow-right"></i></a>
+                                    <p class="description">Empowering learners to achieve their goals with engaging and
+                                        personalized teaching.</p>
+                                    <a class="read-more-button" href="javascript:void(0)"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="javascript:void(0)"></a>
@@ -321,7 +395,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -329,8 +404,10 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title"><a href="javascript:void(0)">UI/UX</a></h4>
-                                    <p class="description"> Crafting intuitive and aesthetically pleasing user interfaces that enhance user engagement.</p>
-                                    <a class="read-more-button" href="javascript:void(0)"><i class="feather-arrow-right"></i></a>
+                                    <p class="description"> Crafting intuitive and aesthetically pleasing user
+                                        interfaces that enhance user engagement.</p>
+                                    <a class="read-more-button" href="javascript:void(0)"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="javascript:void(0)"></a>
@@ -338,7 +415,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -346,8 +424,10 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title"><a href="javascript:void(0)">Landing Pages</a></h4>
-                                    <p class="description">Designing visually appealing and effective landing pages to increase conversion rates.</p>
-                                    <a class="read-more-button" href="javascript:void(0)"><i class="feather-arrow-right"></i></a>
+                                    <p class="description">Designing visually appealing and effective landing pages to
+                                        increase conversion rates.</p>
+                                    <a class="read-more-button" href="javascript:void(0)"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="javascript:void(0)"></a>
@@ -355,7 +435,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -363,8 +444,10 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title"><a href="javascript:void(0)">Freelance Developer</a></h4>
-                                    <p class="description">Transforming your ideas into reality with reliable and professional freelancing services.</p>
-                                    <a class="read-more-button" href="javascript:void(0)"><i class="feather-arrow-right"></i></a>
+                                    <p class="description">Transforming your ideas into reality with reliable and
+                                        professional freelancing services.</p>
+                                    <a class="read-more-button" href="javascript:void(0)"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="javascript:void(0)"></a>
@@ -372,7 +455,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -380,8 +464,10 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title"><a href="javascript:void(0)">Personal Portfolios</a></h4>
-                                    <p class="description"> Building stunning and effective personal portfolios that showcase your skills and accomplishments.</p>
-                                    <a class="read-more-button" href="javascript:void(0)"><i class="feather-arrow-right"></i></a>
+                                    <p class="description"> Building stunning and effective personal portfolios that
+                                        showcase your skills and accomplishments.</p>
+                                    <a class="read-more-button" href="javascript:void(0)"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="javascript:void(0)"></a>
@@ -398,25 +484,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="image-area">
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true"
+                            class="image-area">
                             <div class="thumbnail">
                                 <img src="assets/images/about/my about image.webp" alt="">
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="col-lg-7 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-7 mt_sm--30">
                         <div class="contant">
                             <div class="section-title text-left">
                                 <span class="subtitle">Visit my portfolio & Hire me</span>
                                 <h2 class="title">About Me</h2>
                             </div>
                             <p class="discription">
-                                a full stack web developer with 2 years of industry experience, I have a passion for building high-quality web applications. I have expertise in backend and frontend development, including database design, API development, and responsive web design.
+                                a full stack web developer with 2 years of industry experience, I have a passion for
+                                building high-quality web applications. I have expertise in backend and frontend
+                                development, including database design, API development, and responsive web design.
                             </p>
                             <p class="discription">
-                                I am a detail-oriented developer committed to writing clean, maintainable code. I take pride in delivering high-quality products that exceed expectations.
+                                I am a detail-oriented developer committed to writing clean, maintainable code. I take
+                                pride in delivering high-quality products that exceed expectations.
                             </p>
-                            <a class="rn-btn" target="_blank" href="Satyajit_Giram_Resume.pdf"><span>DOWNLOAD MY CV</span></a>
+                            <a class="rn-btn" target="_blank" href="Satyajit_Giram_Resume.pdf"><span>DOWNLOAD MY
+                                    CV</span></a>
                         </div>
                     </div>
                 </div>
@@ -438,12 +530,14 @@
 
                 <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="assets/images/portfolio/atishaya-automobiles.png" alt="Personal Portfolio Images">
+                                        <img src="assets/images/portfolio/atishaya-automobiles.png"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -453,11 +547,11 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        82</span>
+                                                82</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="javascript:void(0)">Honda Showroom Website<i
-                                        class="feather-arrow-up-right"></i></a></h4>
+                                                class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -465,12 +559,14 @@
                     <!-- End Single Portfolio -->
 
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="assets/images/portfolio/alignflix.png" alt="Personal Portfolio Images">
+                                        <img src="assets/images/portfolio/alignflix.png"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -480,11 +576,11 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        60</span>
+                                                60</span>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">Alignflix Technologies - IT startup.<i
-                                        class="feather-arrow-up-right"></i></a></h4>
+                                    <h4 class="title"><a href="javascript:void(0)">Alignflix Technologies - IT
+                                            startup.<i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -492,12 +588,14 @@
                     <!-- End Single Portfolio -->
 
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="https://i.pinimg.com/originals/2b/94/f4/2b94f459f5f053b7d60e7e389e15d86e.png" alt="Personal Portfolio Images">
+                                        <img src="https://i.pinimg.com/originals/2b/94/f4/2b94f459f5f053b7d60e7e389e15d86e.png"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -507,11 +605,11 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        90</span>
+                                                90</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="javascript:void(0)">Website for a Food Delivery Service<i
-                                        class="feather-arrow-up-right"></i></a></h4>
+                                                class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -536,14 +634,18 @@
                     <div class="col-lg-12">
                         <ul class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="professional-tab" data-bs-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="true">professional
+                                <a class="nav-link active" id="professional-tab" data-bs-toggle="tab"
+                                    href="#professional" role="tab" aria-controls="professional"
+                                    aria-selected="true">professional
                                     Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">experience</a>
+                                <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience"
+                                    role="tab" aria-controls="experience" aria-selected="false">experience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">education</a>
+                                <a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab"
+                                    aria-controls="education" aria-selected="false">education</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a class="nav-link" id="interview-tab" data-bs-toggle="tab" href="#interview" role="tab" aria-controls="interview" aria-selected="false">interview</a>
@@ -569,7 +671,8 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>B.Tech in CSE</h4>
-                                                                    <span>Shreeyash College Of Engineering & Technology (2022 - 2025)</span>
+                                                                    <span>Dr. Babasaheb Ambedkar Technological University
+                                                                        (2022 - 2025)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>89 %</span>
@@ -589,7 +692,7 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4> Diploma In Information Technology</h4>
-                                                                    <span>Govt. Polytechnic College (2019 - 2022)</span>
+                                                                    <span>Govt. Autonomous Polytechnic College (2019 - 2022)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>90 %</span>
@@ -641,14 +744,15 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>ZecData Technology Pvt. Ltd.</h4>
-                                                                    <span>As Junior Software Engineer (2022 - current)</span>
+                                                                    <span>As Junior Software Engineer (2022 -
+                                                                        current)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>11 M</span>
                                                                 </div>
                                                             </div>
-                                                            <p class="description">I am Junior Software Engineer at 
-                                                                ZecData Pvt. Ltd., I am responsible for creating and 
+                                                            <p class="description">I am Junior Software Engineer at
+                                                                ZecData Pvt. Ltd., I am responsible for creating and
                                                                 maintaining high end websites & apps</p>
                                                         </div>
                                                     </div>
@@ -660,15 +764,17 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>Digitute Pvt. Ltd.</h4>
-                                                                    <span>As Web-Developer and Mentor (2021 - 2022)</span>
+                                                                    <span>As Web-Developer and Mentor (2021 -
+                                                                        2022)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>1 Y</span>
                                                                 </div>
                                                             </div>
-                                                            <p class="description">As a Full Stack Web Developer and Trainer 
+                                                            <p class="description">As a Full Stack Web Developer and
+                                                                Trainer
                                                                 at Digitute, I trained 200+ students in web development,
-                                                                 prepared them for interviews</p>
+                                                                prepared them for interviews</p>
                                                         </div>
                                                     </div>
                                                     <!-- End Single List  -->
@@ -703,7 +809,8 @@
                             <!-- End Single Tab  -->
 
                             <!-- Start Single Tab  -->
-                            <div class="tab-pane show active fade single-tab-area" id="professional" role="tabpanel" aria-labelledby="professional-tab">
+                            <div class="tab-pane show active fade single-tab-area" id="professional" role="tabpanel"
+                                aria-labelledby="professional-tab">
                                 <div class="personal-experience-inner mt--40">
                                     <div class="row row--40">
                                         <!-- Start Single Progressbar  -->
@@ -716,8 +823,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">Python</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">85%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.5s" data-wow-delay=".3s"
+                                                                role="progressbar" style="width: 85%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">85%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -726,8 +836,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">Django</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">80%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.6s" data-wow-delay=".4s"
+                                                                role="progressbar" style="width: 80%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">80%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -736,8 +849,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">JAVASCRIPT</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">90%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.7s" data-wow-delay=".5s"
+                                                                role="progressbar" style="width: 90%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">90%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -746,8 +862,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">VueJS</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">75%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.8s" data-wow-delay=".6s"
+                                                                role="progressbar" style="width: 75%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">75%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -756,8 +875,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">Bootstrap-5</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">70%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.9s" data-wow-delay=".7s"
+                                                                role="progressbar" style="width: 70%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">70%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -773,8 +895,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">PHOTOSHOT</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">100%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.5s" data-wow-delay=".3s"
+                                                                role="progressbar" style="width: 100%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">100%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -783,8 +909,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">FIGMA</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">95%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.6s" data-wow-delay=".4s"
+                                                                role="progressbar" style="width: 95%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">95%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -793,8 +922,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">ADOBE XD</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">60%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.7s" data-wow-delay=".5s"
+                                                                role="progressbar" style="width: 60%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">60%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -803,8 +935,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">UI/UX</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">70%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.8s" data-wow-delay=".6s"
+                                                                role="progressbar" style="width: 70%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">70%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -813,8 +948,11 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">DESIGN</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">90%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.9s" data-wow-delay=".7s"
+                                                                role="progressbar" style="width: 90%" aria-valuenow="85"
+                                                                aria-valuemin="0" aria-valuemax="100"><span
+                                                                    class="percent-label">90%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -822,54 +960,70 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- End Single Progressbar  --> 
+                                        <!-- End Single Progressbar  -->
 
                                         <!-- Start Single Progressbar  -->
                                         <div class="col-lg-6 col-md-6 col-12 skills-in-tab">
-                                                                        <!-- Start skiull area -->
-                            <div class="rn-skill-area section-height">
-                                <div class="inner slide">
-                                    <h5 class="title">
-                                        About My Skill
-                                    </h5>
-                                    <div class="skill-share-inner pt--100">
-                                        <span class="title">Primary Skills on</span>
-                                        <ul class="skill-share d-flex liststyle">
-                                            <li><img src="assets/images/icons/icons-08.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/django.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/bootstrap-5.svg" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/scss.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/icons-16.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/icons-05.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/icons-18.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/javascript.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/typescript.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/mongodb.png" alt="Icons Images"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="skill-share-inner skill-share-inner-width margin-top-25">
-                                        <span class="title">Secondary Skills on</span>
-                                        <ul class="skill-share d-flex liststyle">
-                                            <li><img src="assets/images/icons/nextjs.webp" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/angular.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/jquery.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/Adobe_Premiere_Pro.png" alt="Icons Images"></li>
-                                            <li><img src="assets/images/icons/icons-17.png" alt="Icons Images"></li>
-                                            <!-- <li><img src="assets/images/icons/icons-15.png" alt="Icons Images"></li>
+                                            <!-- Start skiull area -->
+                                            <div class="rn-skill-area section-height">
+                                                <div class="inner slide">
+                                                    <h5 class="title">
+                                                        About My Skill
+                                                    </h5>
+                                                    <div class="skill-share-inner pt--100">
+                                                        <span class="title">Primary Skills on</span>
+                                                        <ul class="skill-share d-flex liststyle">
+                                                            <li><img src="assets/images/icons/icons-08.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/django.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/bootstrap-5.svg"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/scss.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/icons-16.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/icons-05.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/icons-18.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/javascript.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/typescript.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/mongodb.png"
+                                                                    alt="Icons Images"></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="skill-share-inner skill-share-inner-width margin-top-25">
+                                                        <span class="title">Secondary Skills on</span>
+                                                        <ul class="skill-share d-flex liststyle">
+                                                            <li><img src="assets/images/icons/nextjs.webp"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/angular.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/jquery.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/Adobe_Premiere_Pro.png"
+                                                                    alt="Icons Images"></li>
+                                                            <li><img src="assets/images/icons/icons-17.png"
+                                                                    alt="Icons Images"></li>
+                                                            <!-- <li><img src="assets/images/icons/icons-15.png" alt="Icons Images"></li>
                                             <li><img src="assets/images/icons/icons-16.png" alt="Icons Images"></li>
                                             <li><img src="assets/images/icons/icons-18.png" alt="Icons Images"></li>
                                             <li><img src="assets/images/icons/icons-19.png" alt="Icons Images"></li>
                                             <li><img src="assets/images/icons/icons-20.png" alt="Icons Images"></li>
                                             <li><img src="assets/images/icons/icons-21.png" alt="Icons Images"></li> -->
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End skiull area -->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End skiull area -->
                                         </div>
                                         <!-- End Single Progressbar  -->
 
-                                        
+
 
                                     </div>
                                 </div>
@@ -893,14 +1047,15 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>ZecData Technology Pvt. Ltd.</h4>
-                                                                    <span>As Junior Software Engineer (2022 - current)</span>
+                                                                    <span>As Junior Software Engineer (2022 -
+                                                                        current)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
-                                                                    <span>11 M</span>
+                                                                    <span>1 Y</span>
                                                                 </div>
                                                             </div>
-                                                            <p class="description">I am Junior Software Engineer at 
-                                                                ZecData Pvt. Ltd., I am responsible for creating and 
+                                                            <p class="description">I am Junior Software Engineer at
+                                                                ZecData Pvt. Ltd., I am responsible for creating and
                                                                 maintaining high end websites & apps</p>
                                                         </div>
                                                     </div>
@@ -912,15 +1067,17 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>Digitute Pvt. Ltd.</h4>
-                                                                    <span>As Web-Developer and Mentor (2021 - 2022)</span>
+                                                                    <span>As Web-Developer and Mentor (2021 -
+                                                                        2022)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>1 Y</span>
                                                                 </div>
                                                             </div>
-                                                            <p class="description">As a Full Stack Web Developer and Trainer 
+                                                            <p class="description">As a Full Stack Web Developer and
+                                                                Trainer
                                                                 at Digitute, I trained 200+ students in web development,
-                                                                 prepared them for interviews</p>
+                                                                prepared them for interviews</p>
                                                         </div>
                                                     </div>
                                                     <!-- End Single List  -->
@@ -963,7 +1120,8 @@
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>B.Tech in CSE</h4>
-                                                                    <span>Shreeyash College Of Engineering & Technology (2022 - 2025)</span>
+                                                                    <span>Dr. Babasaheb Ambedkar Technological University
+                                                                        (2022 - 2025)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>89%</span>
@@ -1037,7 +1195,8 @@
                                                 <div class="experience-list">
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                                                        data-aos-once="true" class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1057,7 +1216,8 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+                                                        data-aos-once="true" class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1077,7 +1237,8 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+                                                        data-aos-once="true" class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1109,7 +1270,8 @@
                                                 <div class="experience-list">
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+                                                        data-aos-once="true" class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1129,7 +1291,8 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700"
+                                                        data-aos-once="true" class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1149,13 +1312,14 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+                                                        data-aos-once="true" class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>Diploma in Computer Science</h4>
                                                                     <span>Works at Plugin Development (2016 -
-                                                                2020)</span>
+                                                                        2020)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>5.00/5</span>
@@ -1185,7 +1349,7 @@
         <!-- End Resume Area -->
 
         <!-- Start Testimonia Area  -->
-        <!-- <div class="rn-testimonial-area rn-section-gap section-separator" id="testimonial">
+        <div class="rn-testimonial-area rn-section-gap section-separator" id="testimonial">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -1199,11 +1363,12 @@
                     <div class="col-lg-12">
                         <div class="testimonial-activation testimonial-pb mb--30"> -->
                             <!-- Start Single testiminail -->
-                            <!-- <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
                                 <div class="inner">
                                     <div class="card-info">
                                         <div class="card-thumbnail">
-                                            <img src="assets/images/testimonial/final-home--1st.png" alt="Testimonial-image">
+                                            <img src="assets/images/testimonial/final-home--1st.png"
+                                                alt="Testimonial-image">
                                         </div>
                                         <div class="card-content">
                                             <span class="subtitle mt--10">FURIX</span>
@@ -1234,14 +1399,15 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                             <!--End Single testiminail -->
                             <!-- Start Single testiminail -->
-                            <!-- <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
                                 <div class="inner">
                                     <div class="card-info">
                                         <div class="card-thumbnail">
-                                            <img src="assets/images/testimonial/final-home--2nd.png" alt="Testimonial-image">
+                                            <img src="assets/images/testimonial/final-home--2nd.png"
+                                                alt="Testimonial-image">
                                         </div>
                                         <div class="card-content">
                                             <span class="subtitle mt--10">Bound - Trolola</span>
@@ -1272,15 +1438,16 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                             <!--End Single testiminail -->
-                           
+
                             <!-- Start Single testiminail -->
-                            <!-- <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                            <div class="testimonial mt--50 mt_md--40 mt_sm--40">
                                 <div class="inner">
                                     <div class="card-info">
                                         <div class="card-thumbnail">
-                                            <img src="assets/images/testimonial/final-home--5th.png" alt="Testimonial-image">
+                                            <img src="assets/images/testimonial/final-home--5th.png"
+                                                alt="Testimonial-image">
                                         </div>
                                         <div class="card-content">
                                             <span class="subtitle mt--10">Default name</span>
@@ -1311,20 +1478,21 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                             <!--End Single testiminail -->
-                        <!-- </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- End Testimonia Area  -->
         <!-- Pricing Area -->
         <div class="rn-pricing-area rn-section-gap section-separator" id="pricing">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-xl-5 mb_md--40 mb_sm--40 small-margin-pricing">
-                        <div class="d-block d-lg-flex text-center d-lg-left section-flex flex-wrap align-content-start h-100">
+                        <div
+                            class="d-block d-lg-flex text-center d-lg-left section-flex flex-wrap align-content-start h-100">
                             <div class="position-sticky sticky-top rbt-sticky-top-adjust">
                                 <div class="section-title text-left">
                                     <span class="subtitle text-center text-lg-left">Pricing</span>
@@ -1339,14 +1507,17 @@
                         <div class="navigation-wrapper">
                             <ul class="nav " id="myTab" role="tablist">
                                 <li class="nav-item ">
-                                    <a class="nav-style" id="test-tab" data-bs-toggle="tab" href="#test" role="tab" aria-controls="test" aria-selected="false">Static</a>
+                                    <a class="nav-style" id="test-tab" data-bs-toggle="tab" href="#test" role="tab"
+                                        aria-controls="test" aria-selected="false">Static</a>
                                 </li>
 
                                 <li class="nav-item  recommended">
-                                    <a class="nav-style active" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Standard</a>
+                                    <a class="nav-style active" id="profile-tab" data-bs-toggle="tab" href="#profile"
+                                        role="tab" aria-controls="profile" aria-selected="true">Standard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-style" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Premium</a>
+                                    <a class="nav-style" id="contact-tab" data-bs-toggle="tab" href="#contact"
+                                        role="tab" aria-controls="contact" aria-selected="false">Premium</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
@@ -1443,7 +1614,8 @@
                                     <!-- End -->
                                 </div>
 
-                                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="tab-pane fade show active" id="profile" role="tabpanel"
+                                    aria-labelledby="profile-tab">
                                     <!-- Pricing Start -->
                                     <div class="rn-pricing">
                                         <div class="pricing-header">
@@ -1647,8 +1819,8 @@
                 </div>
                 <div class="row row--25 mt--30 mt_md--10 mt_sm--10"> -->
 
-                    <!-- Start Single blog -->
-                    <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+        <!-- Start Single blog -->
+        <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
                         <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                             <div class="inner">
                                 <div class="thumbnail">
@@ -1671,10 +1843,10 @@
                             </div>
                         </div>
                     </div> -->
-                    <!-- End Single blog -->
+        <!-- End Single blog -->
 
-                    <!-- Start Single blog -->
-                    <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+        <!-- Start Single blog -->
+        <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
                         <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                             <div class="inner">
                                 <div class="thumbnail">
@@ -1697,10 +1869,10 @@
                             </div>
                         </div>
                     </div> -->
-                    <!-- End Single blog -->
+        <!-- End Single blog -->
 
-                    <!-- Start Single blog -->
-                    <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+        <!-- Start Single blog -->
+        <!-- <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
                         <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                             <div class="inner">
                                 <div class="thumbnail">
@@ -1723,9 +1895,9 @@
                             </div>
                         </div>
                     </div> -->
-                    <!-- End Single blog -->
+        <!-- End Single blog -->
 
-                <!-- </div>
+        <!-- </div>
             </div>
         </div> -->
         <!-- ENd Mews Area -->
@@ -1755,12 +1927,14 @@
                                 <p>I am available for freelance work. Connect with me via and call in to my account.
                                 </p>
                                 <span class="phone">Phone: <a href="tel:+919545221130">+919545221130</a></span>
-                                <span class="mail">Email: <a href="mailto:satyajitgiram.dev@gmail.com">satyajitgiram.dev@gmail.com</a></span>
+                                <span class="mail">Email: <a
+                                        href="mailto:satyajitgiram.dev@gmail.com">satyajitgiram.dev@gmail.com</a></span>
                             </div>
                             <div class="social-area">
                                 <div class="name">FIND WITH ME</div>
                                 <div class="social-icone">
-                                    <a href="https://www.linkedin.com/in/satyajitgiram/" target="_blank"><i data-feather="linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/satyajitgiram/" target="_blank"><i
+                                            data-feather="linkedin"></i></a>
                                     <a href="#"><i data-feather="facebook"></i></a>
                                     <a href="#"><i data-feather="instagram"></i></a>
                                 </div>
@@ -1771,12 +1945,14 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="mail.php">
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST"
+                                    action="mail.php">
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="contact-name">Your Name</label>
-                                            <input class="form-control form-control-lg" name="Name" id="contact-name" type="text">
+                                            <input class="form-control form-control-lg" name="Name" id="contact-name"
+                                                type="text">
                                         </div>
                                     </div>
 
@@ -1790,21 +1966,24 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-email">Email</label>
-                                            <input class="form-control form-control-sm" id="contact-email" name="Email" type="email">
+                                            <input class="form-control form-control-sm" id="contact-email" name="Email"
+                                                type="email">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="subject">subject</label>
-                                            <input class="form-control form-control-sm" id="subject" name="Subject" type="text">
+                                            <input class="form-control form-control-sm" id="subject" name="Subject"
+                                                type="text">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-message">Your Message</label>
-                                            <textarea name="Message" id="contact-message" cols="30" rows="10"></textarea>
+                                            <textarea name="Message" id="contact-message" cols="30"
+                                                rows="10"></textarea>
                                         </div>
                                     </div>
 
@@ -1837,7 +2016,8 @@
                             <div class="col-lg-6">
                                 <div class="portfolio-popup-thumbnail">
                                     <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/atishaya-automobiles.png" alt="slide">
+                                        <img class="w-100" src="assets/images/portfolio/atishaya-automobiles.png"
+                                            alt="slide">
                                     </div>
                                 </div>
                             </div>
@@ -1847,7 +2027,12 @@
                                     <h3>
                                         <span>Full stack Website</span> Honda Showroom Website.
                                     </h3>
-                                    <p class="mb--30">The Atishaya Automobiles website is an online platform dedicated to providing an exceptional experience for customers interested in Hero Honda bikes. <br> As an authorized Hero Honda bikes dealer, Atishaya Automobiles offers a wide range of Hero motorcycles and scooters, along with comprehensive services to cater to the needs of bike enthusiasts in the Sagar district of Madhya Pradesh.</p>
+                                    <p class="mb--30">The Atishaya Automobiles website is an online platform dedicated
+                                        to providing an exceptional experience for customers interested in Hero Honda
+                                        bikes. <br> As an authorized Hero Honda bikes dealer, Atishaya Automobiles
+                                        offers a wide range of Hero motorcycles and scooters, along with comprehensive
+                                        services to cater to the needs of bike enthusiasts in the Sagar district of
+                                        Madhya Pradesh.</p>
                                     <!-- <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p> -->
                                     <div class="button-group mt--20">
                                         <a href="#" class="rn-btn thumbs-icon">
@@ -1871,56 +2056,60 @@
         </div>
 
         <!-- End Modal Portfolio area -->
-            <!-- Modal Portfolio Body area Start -->
-                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true"><i data-feather="x"></i></span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row align-items-center">
-        
-                                    <div class="col-lg-6">
-                                        <div class="portfolio-popup-thumbnail">
-                                            <div class="image">
-                                                <img class="w-100" src="assets/images/portfolio/alignflix.png" alt="slide">
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="col-lg-6">
-                                        <div class="text-content">
-                                            <h3>
-                                                <span>Web Development</span> Alignflix Technologies - IT startup.
-                                            </h3>
-                                            <p class="mb--30">Alignflix, an innovative and dynamic website crafted for a forward-thinking IT startup company. Alignflix offers a cutting-edge platform tailored to streamline project management processes and foster seamless team collaboration. 
-                                                <p> With a sleek and modern user interface, the website ensures an intuitive and engaging user experience across all devices.</p>
-                                            </p>
-                                            <div class="button-group mt--20">
-                                                <a href="#" class="rn-btn thumbs-icon">
-                                                    <span>LIKE THIS</span>
-                                                    <i data-feather="thumbs-up"></i>
-                                                </a>
-                                                <a href="https://alignflix.com/" target="_blank" class="rn-btn">
-                                                    <span>VIEW PROJECT</span>
-                                                    <i data-feather="chevron-right"></i>
-                                                </a>
-                                            </div>
-        
-                                        </div>
-                                        <!-- End of .text-content -->
+        <!-- Modal Portfolio Body area Start -->
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i data-feather="x"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="portfolio-popup-thumbnail">
+                                    <div class="image">
+                                        <img class="w-100" src="assets/images/portfolio/alignflix.png" alt="slide">
                                     </div>
                                 </div>
-                                <!-- End of .row Body-->
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="text-content">
+                                    <h3>
+                                        <span>Web Development</span> Alignflix Technologies - IT startup.
+                                    </h3>
+                                    <p class="mb--30">Alignflix, an innovative and dynamic website crafted for a
+                                        forward-thinking IT startup company. Alignflix offers a cutting-edge platform
+                                        tailored to streamline project management processes and foster seamless team
+                                        collaboration.
+                                    <p> With a sleek and modern user interface, the website ensures an intuitive and
+                                        engaging user experience across all devices.</p>
+                                    </p>
+                                    <div class="button-group mt--20">
+                                        <a href="#" class="rn-btn thumbs-icon">
+                                            <span>LIKE THIS</span>
+                                            <i data-feather="thumbs-up"></i>
+                                        </a>
+                                        <a href="https://alignflix.com/" target="_blank" class="rn-btn">
+                                            <span>VIEW PROJECT</span>
+                                            <i data-feather="chevron-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- End of .text-content -->
                             </div>
                         </div>
+                        <!-- End of .row Body-->
                     </div>
                 </div>
-                
-            <!-- End Modal Portfolio area -->
+            </div>
+        </div>
+
+        <!-- End Modal Portfolio area -->
         <!-- Modal Portfolio Body area Start -->
         <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1936,7 +2125,9 @@
                             <div class="col-lg-6">
                                 <div class="portfolio-popup-thumbnail">
                                     <div class="image">
-                                        <img class="w-100" src="https://i.pinimg.com/originals/2b/94/f4/2b94f459f5f053b7d60e7e389e15d86e.png" alt="slide">
+                                        <img class="w-100"
+                                            src="https://i.pinimg.com/originals/2b/94/f4/2b94f459f5f053b7d60e7e389e15d86e.png"
+                                            alt="slide">
                                     </div>
                                 </div>
                             </div>
@@ -1946,8 +2137,10 @@
                                     <h3>
                                         <span>Featured - Design</span> Website for a Food Delivery Service.
                                     </h3>
-                                    <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
-                                    <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                    <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
+                                    <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
                                     <div class="button-group mt--20">
                                         <a href="#" class="rn-btn thumbs-icon">
                                             <span>LIKE THIS</span>
@@ -1968,7 +2161,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- End Modal Portfolio area -->
 
         <!-- Back to  top Start -->
@@ -1992,7 +2185,8 @@
                                 <img src="assets/images/logo/Untitled design (3).svg" alt="logo">
                             </a>
                         </div>
-                        <p class="description mt--30">© 2023. All rights reserved by <a target="_blank" href="https://satyajit.vercel.app">Satyajit Giram.</a></p>
+                        <p class="description mt--30">© 2023. All rights reserved by <a target="_blank"
+                                href="https://satyajit.vercel.app">Satyajit Giram.</a></p>
                     </div>
                 </div>
             </div>
